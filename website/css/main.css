@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    padding-top: 24px;
+    padding-bottom: 22px;
+    background: #000000;
+    border-bottom: 1px solid #3f0924;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .content {
+    max-width: 1780px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {}
+
+header .logo a {
+    text-decoration: none;
+}
+
+header .logo a img {}
+
+header .right {}
+
+header .right ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 19px;
+}
+
+header .right ul li {
+    margin-right: 50px;
+}
+
+header .right ul li a {
+    color: #f4dc96;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+    display: block;
+}
+
+header .right ul li:last-child {
+    margin-right: 0;
+}
+
+header .right .mobile_button {
+    display: none;
+    width: 45px;
+    height: 50px;
+    position: relative;
+}
+
+header .right .mobile_button span {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+    left: 0;
+    top: calc(50% - 1px);
+    transition: .3s all ease-in-out;
+}
+
+header .right .mobile_button span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+    left: 0;
+    bottom: -15px;
+    transition: .3s all ease-in-out;
+}
+
+header .right .mobile_button span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+    left: 0;
+    top: -15px;
+    transition: .3s all ease-in-out;
+}
+
+header .right .mobile_button.active span {
+    background-color: transparent;
+}
+
+header .right .mobile_button.active span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+header .right .mobile_button.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.main {
+    padding-top: 206px;
+    background: url(../img/main_bg.png) no-repeat center, #000000;
+    background-position-y: calc(100% - 60px);
+    padding-bottom: 143px;
+}
+
+.main .content {}
+
+.main h1 {
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Ult Lt";
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 51px;
+    max-width: 860px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.main p {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Ult Lt";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 40px;
+}
+
+.main a {
+    margin: 0 auto;
+    display: block;
+    width: 274px;
+    background: #f4dc95;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.networks {
+    padding-top: 98px;
+    padding-bottom: 110px;
+    background-color: #151515;
+}
+
+.networks .content {}
+
+.networks h2 {
+    color: #f4dc96;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.networks p {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.22px;
+    max-width: 896px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.technology {
+    background: #000000;
+    padding: 95px 0;
+}
+
+.technology .content {
+    max-width: 1200px;
+}
+
+.technology h2 {
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+}
+
+.technology .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.technology .items .item {
+    margin-top: 85px;
+    width: calc(33.33% - 30px / 3 * 2);
+}
+
+.technology .items .item .img {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 27px;
+}
+
+.technology .items .item .img img {}
+
+.technology .items .item .name {
+    color: #f4dc96;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin-bottom: 23px;
+    max-width: 346px;
+}
+
+.technology .items .item .desc {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    max-width: 346px;
+    text-align: justify;
+}
+
+.technology .more {
+    margin-top: 88px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 29px;
+}
+
+.technology .more_link {
+    display: block;
+    background: #f4dc95;
+    width: 214px;
+    margin: 0 auto;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.providing {
+    padding: 90px 0;
+    background-color: #151515;
+}
+
+.providing .content {
+    max-width: 910px;
+}
+
+.providing h2 {
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.providing .desc {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.22px;
+    max-width: 673px;
+    text-align: center;
+    margin: 0 auto 96px;
+}
+
+.providing .item {
+    background: #000000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.providing .item .left {
+    width: 221px;
+    height: 223px;
+    background: url(../img/providing_bg.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.providing .item .left img {}
+
+.providing .item .right {
+    width: calc(100% - 221px);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.providing .item .right .name {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1.09px;
+    margin-bottom: 20px;
+}
+
+.providing .item .right .text {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+}
+
+.providing .bot_text {
+    margin-top: 44px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 38px;
+}
+
+.providing .more_link {
+    display: block;
+    background: #f4dc95;
+    width: 214px;
+    margin: 0 auto;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 21px;
+    font-weight: 400;
+}
+
+footer {
+    padding-top: 95px;
+    padding-bottom: 35px;
+    background: url(../img/footer_bg.png) no-repeat center bottom, #000000;
+}
+
+footer .top {
+    margin-bottom: 67px;
+}
+
+footer .top .content {
+    max-width: 1780px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .top .left {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .top .menu {
+    margin-right: 160px;
+}
+
+footer .top .menu h3 {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    line-height: 18px;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    margin-bottom: 18px;
+}
+
+footer .top .menu ul {}
+
+footer .top .menu ul li {
+    margin-bottom: 18px;
+}
+
+footer .top .menu ul li a {
+    color: #606060;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+    line-height: 18px;
+}
+
+footer .top .menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer .top .right {
+    max-width: 329px;
+}
+
+footer .top .right h3 {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.18px;
+    margin-bottom: 32px;
+}
+
+footer .top .right form {}
+
+footer .top .right form input {
+    display: block;
+    max-width: 283px;
+    width: 100%;
+    background: #555555;
+    border: none;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 20px;
+    padding: 0 20px;
+    color: #000000;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+footer .top .right form button {
+    width: 167px;
+    background: #f4dc95;
+    border: none;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 20px;
+    color: #000000;
+    font-family: "Helvetica Neue LT Pro - Bd";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 34px;
+    display: block;
+    cursor: pointer;
+}
+
+footer .top .right p {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.18px;
+}
+
+footer .bot {}
+
+footer .bot .content {
+    max-width: 1780px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .bot .logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .bot .logo img {}
+
+footer .bot .text {
+    margin-left: 19px;
+    margin-top: 15px;
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.18px;
+}
+
+footer .bot .text a {
+    color: #999999;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+}
+
+footer .top .menu:last-child {
+    margin-right: 0;
+}
+
+.logo1 {
+    width: 175px;
+    height: 45px;
+    position: relative;
+    margin-top: -9px;
+}
+
+.logo1:before,
+.logo1:after {
+    content: '';
+    width: calc(100%);
+    height: calc(100%);
+    box-shadow: 0 0 1px 1px var(--color-pale);
+    position: absolute;
+    border: 2px solid #f4dc96;
+}
+
+.logo1:before {
+    left: -5px;
+    top: -5px;
+}
+
+.logo1:after {
+    left: 5px;
+    top: 5px;
+}
+
+.logo1 p {
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro - Lt";
+    color: #f4dc96;
+    text-decoration: none;
+    padding-top: 8px;
+    font-size: 25px;
+}
+
+footer .bot .logo a {
+    text-decoration: none;
+}

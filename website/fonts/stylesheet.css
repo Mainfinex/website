@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Helvetica Neue LT Pro - Lt";
+    src: url('HelveticaNeueLTPro-Lt.woff2') format('woff2'),
+        url('HelveticaNeueLTPro-Lt.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro - Ult Lt";
+    src: url('HelveticaNeueLTPro-UltLt.woff2') format('woff2'),
+        url('HelveticaNeueLTPro-UltLt.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro - Bd";
+    src: url('HelveticaNeueLTPro-Bd.woff2') format('woff2'),
+        url('HelveticaNeueLTPro-Bd.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
